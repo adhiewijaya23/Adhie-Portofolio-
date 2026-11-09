@@ -4,376 +4,457 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Adhie Wijaya - Electrical Engineer Portfolio">
+<meta name="description" content="Portofolio profesional Adhie Wijaya - Electrical Engineer">
 <title>Adhie Wijaya | Electrical Engineer</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg:#081522;
-  --panel:#102437;
-  --teal:#58d6c5;
-  --white:#edf4f7;
-  --muted:#9aabb8;
-  --line:#23394a;
+  --bg: #081522;
+  --panel: #102437;
+  --teal: #58d6c5;
+  --white: #edf4f7;
+  --muted: #a0b0bd;
+  --line: #263b4b;
 }
 
 * {
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  scroll-behavior:smooth;
-  scroll-padding-top:85px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  background:var(--bg);
-  color:var(--white);
-  font-family:'DM Sans',sans-serif;
-  line-height:1.7;
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
 }
 
 a {
-  color:inherit;
-  text-decoration:none;
+  color: inherit;
+  text-decoration: none;
 }
 
+/* NAVIGATION */
+
 header {
-  max-width:1150px;
-  margin:auto;
-  padding:22px 25px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid var(--line);
+  max-width: 1150px;
+  margin: auto;
+  padding: 22px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
 }
 
 .logo {
-  font:800 16px Manrope;
-  color:var(--teal);
-  letter-spacing:2px;
+  font: 800 16px 'Manrope', sans-serif;
+  color: var(--teal);
+  letter-spacing: 2px;
 }
 
 nav {
-  display:flex;
-  gap:25px;
-  font-size:12px;
+  display: flex;
+  gap: 22px;
+  font-size: 12px;
 }
 
 nav a:hover {
-  color:var(--teal);
+  color: var(--teal);
 }
 
 .menu {
-  display:none;
-  background:none;
-  color:white;
-  border:1px solid var(--line);
-  padding:8px 12px;
-  cursor:pointer;
+  display: none;
+  background: none;
+  color: white;
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  cursor: pointer;
 }
+
+/* GENERAL SECTION */
 
 section {
-  max-width:1100px;
-  margin:auto;
-  padding:90px 25px;
+  max-width: 1150px;
+  margin: auto;
+  padding: 85px 30px;
 }
 
-.hero {
-  min-height:650px;
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  align-items:center;
-  gap:45px;
-}
-
-.tag,.label {
-  font-size:10px;
-  letter-spacing:2px;
-  color:var(--teal);
-  font-weight:bold;
-}
-
-h1 {
-  font:800 clamp(42px,6vw,68px)/1.15 Manrope;
-  margin:20px 0;
-}
-
-h1 span,h2 span {
-  color:var(--teal);
-}
-
-.intro {
-  max-width:550px;
-  font-size:15px;
-  color:var(--muted);
-}
-
-.buttons {
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-
-.btn {
-  padding:12px 19px;
-  border:1px solid var(--teal);
-  border-radius:5px;
-  font-size:12px;
-  font-weight:bold;
-  transition:.3s;
-}
-
-.btn:hover {
-  transform:translateY(-3px);
-}
-
-.primary {
-  background:var(--teal);
-  color:#081522;
-}
-
-.profile {
-  height:390px;
-  width:100%;
-  max-width:390px;
-  margin:auto;
-  overflow:hidden;
-  border:1px solid var(--teal);
-  background:var(--panel);
-  box-shadow:0 15px 45px rgba(0,0,0,.2);
-}
-
-.profile img {
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:cover;
-  object-position:center 25%;
-}
-
-.stats {
-  display:flex;
-  gap:35px;
-  margin-top:45px;
-}
-
-.stats strong {
-  display:block;
-  font:800 23px Manrope;
-}
-
-.stats small {
-  font-size:10px;
-  color:var(--muted);
+.label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--teal);
+  font-weight: 700;
 }
 
 h2 {
-  font:700 clamp(30px,4vw,43px)/1.2 Manrope;
-  margin:10px 0 25px;
+  font: 700 clamp(30px, 4vw, 43px)/1.2 'Manrope', sans-serif;
+  margin: 12px 0 28px;
 }
 
-section p {
-  color:var(--muted);
+h2 span {
+  color: var(--teal);
 }
+
+/* HERO */
+
+.hero {
+  min-height: 690px;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.hero-brand {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(27px, 3.5vw, 43px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.hero-brand span {
+  display: block;
+  color: var(--teal);
+  font-size: clamp(42px, 5.5vw, 64px);
+  letter-spacing: 4px;
+}
+
+.hero-name {
+  font: 800 clamp(32px, 4vw, 46px)/1.2 'Manrope', sans-serif;
+  margin-bottom: 10px;
+}
+
+.hero-name span {
+  color: var(--teal);
+}
+
+.hero-role {
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 650px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid var(--teal);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.primary {
+  background: var(--teal);
+  color: #081522;
+}
+
+.stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 42px;
+}
+
+.stats strong {
+  display: block;
+  font: 800 25px 'Manrope', sans-serif;
+}
+
+.stats small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* PROFILE PHOTO */
+
+.profile {
+  height: 450px;
+  width: 100%;
+  max-width: 390px;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid var(--teal);
+  background: var(--panel);
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+/* ABOUT */
 
 #about p {
-  margin-bottom:15px;
-  max-width:850px;
+  max-width: 850px;
+  margin-bottom: 15px;
+  color: var(--muted);
 }
 
+/* CARDS */
+
 .grid {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
 }
 
 .card {
-  background:var(--panel);
-  border:1px solid var(--line);
-  padding:25px;
-  border-radius:5px;
-  transition:.3s;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 25px;
+  border-radius: 6px;
+  transition: .3s;
 }
 
 .card:hover {
-  border-color:var(--teal);
-  transform:translateY(-4px);
+  border-color: var(--teal);
+  transform: translateY(-4px);
 }
 
 .card h3 {
-  font:700 17px Manrope;
-  margin:8px 0;
+  font: 700 18px 'Manrope', sans-serif;
+  margin: 10px 0;
 }
 
 .card p {
-  font-size:12px;
+  font-size: 13px;
+  color: var(--muted);
 }
 
 .icon {
-  font-size:25px;
-  color:var(--teal);
+  font-size: 26px;
+  color: var(--teal);
 }
 
 .tags {
-  display:flex;
-  gap:7px;
-  flex-wrap:wrap;
-  margin-top:17px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 17px;
 }
 
 .tags span {
-  font-size:9px;
-  border:1px solid #345064;
-  padding:5px 9px;
-  color:#bdcbd2;
-  border-radius:3px;
+  font-size: 10px;
+  border: 1px solid #345064;
+  padding: 5px 10px;
+  color: #bdcbd2;
+  border-radius: 4px;
 }
 
+/* EXPERIENCE */
+
 .timeline {
-  border-left:2px solid var(--teal);
-  padding:5px 0 5px 25px;
-  margin-left:8px;
+  border-left: 2px solid var(--teal);
+  padding: 5px 0 5px 25px;
+  margin-left: 8px;
 }
 
 .timeline .card {
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
+/* PROJECTS */
+
 .project {
-  overflow:hidden;
-  padding:0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .project-head {
-  height:155px;
-  background:radial-gradient(circle,#22515a,#102437 70%);
-  display:grid;
-  place-items:center;
-  color:var(--teal);
-  font:800 38px Manrope;
-  letter-spacing:3px;
+  height: 165px;
+  background: radial-gradient(circle, #22515a, #102437 70%);
+  display: grid;
+  place-items: center;
+  color: var(--teal);
+  font: 800 38px 'Manrope', sans-serif;
+  letter-spacing: 3px;
 }
 
 .project-body {
-  padding:22px;
+  padding: 23px;
 }
 
 .project-body h3 {
-  margin-top:8px;
+  margin: 10px 0;
 }
 
+/* EDUCATION */
+
 .education {
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
 }
 
 .education strong {
-  font:700 19px Manrope;
+  font: 700 19px 'Manrope', sans-serif;
 }
+
+/* CERTIFICATES */
 
 .credential {
-  padding:20px 0;
-  border-bottom:1px solid var(--line);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
 }
 
+.credential b {
+  font-size: 15px;
+}
+
+.credential p {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* CONTACT */
+
 .contact {
-  text-align:center;
-  background:#0c1d2b;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
+  text-align: center;
+  background: #0c1d2b;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  max-width: 100%;
 }
 
 .contact p {
-  max-width:500px;
-  margin:15px auto 25px;
+  max-width: 550px;
+  margin: 15px auto 25px;
+  color: var(--muted);
 }
 
 .social {
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  margin-top:35px;
-  font-size:10px;
-  letter-spacing:1px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 
 .social a:hover {
-  color:var(--teal);
+  color: var(--teal);
 }
+
+/* FOOTER */
 
 footer {
-  padding:25px;
-  text-align:center;
-  color:#8296a2;
-  font-size:10px;
+  padding: 25px;
+  text-align: center;
+  color: #8296a2;
+  font-size: 11px;
 }
 
-@media(max-width:700px) {
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 750px) {
+
   header {
-    padding:17px 20px;
+    padding: 17px 20px;
   }
 
   .menu {
-    display:block;
+    display: block;
   }
 
   nav {
-    display:none;
-    position:absolute;
-    top:65px;
-    left:0;
-    right:0;
-    background:#102437;
-    padding:20px;
-    z-index:5;
-    flex-direction:column;
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background: #102437;
+    padding: 20px;
+    z-index: 10;
+    flex-direction: column;
   }
 
   nav.open {
-    display:flex;
+    display: flex;
   }
 
   section {
-    padding:65px 22px;
+    padding: 65px 22px;
   }
 
   .hero {
-    grid-template-columns:1fr;
-    padding-top:65px;
-    gap:35px;
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+    gap: 35px;
+  }
+
+  .hero-brand {
+    font-size: 27px;
+  }
+
+  .hero-brand span {
+    font-size: 43px;
   }
 
   .profile {
-    height:350px;
-    max-width:330px;
+    height: 390px;
+    max-width: 330px;
   }
 
   .grid {
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
 
   .stats {
-    gap:22px;
+    gap: 22px;
   }
 
   .education {
-    align-items:flex-start;
-    flex-direction:column;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 18px;
   }
 }
 </style>
 </head>
 
 <body>
+
+<!-- NAVIGATION -->
 
 <header>
   <a class="logo" href="#home">ADHIE WIJAYA.</a>
@@ -393,29 +474,50 @@ footer {
   </nav>
 </header>
 
-<!-- HERO -->
+<!-- HERO / PROFILE -->
+
 <section class="hero" id="home">
 
   <div>
-    <div class="tag">
-      ELECTRICAL ENGINEERING · ELECTRONICS · AUTOMATION
+
+    <div class="hero-brand">
+      ELECTRICAL ENGINEERING
+      <span>AUTOMATION</span>
     </div>
 
-    <h1>
-      Merancang solusi.<br>
-      <span>Menghubungkan ide.</span>
+    <h1 class="hero-name">
+      Adhie Wijaya<span>.</span>
     </h1>
 
+    <div class="hero-role">
+      Electrical Engineer | D4 Teknik Elektronika
+    </div>
+
     <p class="intro">
-      Halo, saya <b>Adhie Wijaya</b>, lulusan D4 Teknik
-      Elektronika dari Politeknik Negeri Malang.
-      Saya memiliki ketertarikan pada sistem kendali,
-      instrumentasi, elektronika, dan otomasi industri.
+      Lulusan Sarjana Terapan (D-IV) Teknik Elektronika
+      dari Politeknik Negeri Malang dengan pengalaman
+      magang di PT INKA pada bidang Electrical Final
+      Inspection and Testing. Memiliki pemahaman yang
+      baik mengenai PLC, sistem kendali, mikrokontroler,
+      electrical panel, sensor dan aktuator, serta
+      troubleshooting. Terbiasa memahami proses
+      pemeriksaan dan pengujian sistem kelistrikan
+      dengan mengutamakan ketelitian, kedisiplinan,
+      dan keselamatan kerja. Memiliki semangat belajar
+      yang tinggi, kemampuan beradaptasi, serta motivasi
+      untuk mengembangkan kompetensi teknis dan
+      berkontribusi secara profesional dalam mendukung
+      kegiatan operasional dan kebutuhan industri.
     </p>
 
     <div class="buttons">
-      <a class="btn primary" href="#projects">Lihat Proyek ↗</a>
-      <a class="btn" href="#contact">Hubungi Saya</a>
+      <a class="btn primary" href="#projects">
+        Lihat Proyek ↗
+      </a>
+
+      <a class="btn" href="#contact">
+        Hubungi Saya
+      </a>
     </div>
 
     <div class="stats">
@@ -434,36 +536,39 @@ footer {
         <small>Pengalaman INKA</small>
       </div>
     </div>
+
   </div>
 
   <div class="profile">
-    <img src="adhie.jpeg"
-         alt="Foto profil Adhie Wijaya">
+    <img src="adhie.jpeg" alt="Foto profil Adhie Wijaya">
   </div>
 
 </section>
 
 <!-- ABOUT -->
+
 <section id="about">
   <div class="label">01 / ABOUT ME</div>
   <h2>Tentang <span>Saya.</span></h2>
 
   <p>
-    Saya merupakan lulusan D4 Teknik Elektronika dari
-    Politeknik Negeri Malang. Memiliki minat dalam
-    pengembangan perangkat elektronika, sistem kendali,
-    instrumentasi, dan manufaktur.
+    Saya merupakan lulusan Sarjana Terapan (D-IV)
+    Teknik Elektronika dari Politeknik Negeri Malang.
+    Memiliki minat dalam pengembangan sistem elektronika,
+    sistem kendali, instrumentasi, dan otomasi industri.
   </p>
 
   <p>
     Melalui kegiatan akademik, proyek, dan pengalaman
     praktik industri, saya terbiasa mempelajari sistem,
-    melakukan perakitan, pengujian, serta menganalisis
-    hasil untuk menemukan solusi yang fungsional.
+    melakukan perakitan, pemeriksaan, pengujian, serta
+    menganalisis hasil untuk mendukung penyelesaian
+    permasalahan teknis.
   </p>
 </section>
 
 <!-- SKILLS -->
+
 <section id="skills">
   <div class="label">02 / EXPERTISE</div>
   <h2>Keahlian & <span>Kompetensi.</span></h2>
@@ -473,8 +578,10 @@ footer {
     <article class="card">
       <div class="icon">⌘</div>
       <h3>Electronics</h3>
-      <p>Perakitan rangkaian, elektronika digital,
-      mikrokontroler, dan troubleshooting.</p>
+      <p>
+        Perakitan rangkaian, elektronika digital,
+        mikrokontroler, dan troubleshooting.
+      </p>
       <div class="tags">
         <span>ESP32</span>
         <span>Arduino</span>
@@ -485,20 +592,24 @@ footer {
     <article class="card">
       <div class="icon">⌁</div>
       <h3>Control Systems</h3>
-      <p>Implementasi sistem kendali, driver motor,
-      PWM, dan otomasi.</p>
+      <p>
+        Implementasi sistem kendali, driver motor,
+        PWM, dan otomasi.
+      </p>
       <div class="tags">
+        <span>PLC</span>
         <span>PWM</span>
         <span>Motor Driver</span>
-        <span>IoT</span>
       </div>
     </article>
 
     <article class="card">
       <div class="icon">◉</div>
       <h3>Instrumentation</h3>
-      <p>Integrasi sensor, pengukuran parameter,
-      kalibrasi, dan pengujian sistem.</p>
+      <p>
+        Integrasi sensor, pengukuran parameter,
+        kalibrasi, dan pengujian sistem.
+      </p>
       <div class="tags">
         <span>Sensor</span>
         <span>Multimeter</span>
@@ -509,8 +620,10 @@ footer {
     <article class="card">
       <div class="icon">▤</div>
       <h3>Industrial Practice</h3>
-      <p>Pemeriksaan, pengujian, dokumentasi teknis,
-      dan prosedur kerja.</p>
+      <p>
+        Pemeriksaan, pengujian, dokumentasi teknis,
+        dan prosedur kerja.
+      </p>
       <div class="tags">
         <span>Inspection</span>
         <span>Testing</span>
@@ -522,25 +635,27 @@ footer {
 </section>
 
 <!-- EXPERIENCE -->
+
 <section id="experience">
   <div class="label">03 / EXPERIENCE</div>
   <h2>Pengalaman <span>Industri.</span></h2>
 
   <div class="timeline">
+
     <article class="card">
 
-      <div class="tag">JULI – DESEMBER 2025</div>
+      <div class="label">JULI – DESEMBER 2025</div>
 
       <h3>PT INKA (Persero)</h3>
 
-      <b>Electrical Final Inspection and Testing · Internship</b>
+      <b>Electrical Final Inspection and Testing</b>
 
       <p>
-        Mendapatkan pengalaman praktik pada kegiatan
+        Melaksanakan kegiatan praktik industri pada bidang
         pemeriksaan akhir dan pengujian sistem kelistrikan
-        kereta. Mempelajari proses inspeksi, ketelitian
-        pemeriksaan, serta pentingnya kesesuaian hasil
-        pengujian dengan prosedur kerja.
+        kereta. Mempelajari proses inspeksi, pemeriksaan
+        instalasi kelistrikan, serta pentingnya ketelitian
+        dan kesesuaian hasil pengujian dengan prosedur kerja.
       </p>
 
       <div class="tags">
@@ -550,10 +665,12 @@ footer {
       </div>
 
     </article>
+
   </div>
 </section>
 
 <!-- PROJECTS -->
+
 <section id="projects">
   <div class="label">04 / SELECTED PROJECTS</div>
   <h2>Project <span>Highlights.</span></h2>
@@ -561,10 +678,12 @@ footer {
   <div class="grid">
 
     <article class="card project">
+
       <div class="project-head">MY1020</div>
 
       <div class="project-body">
-        <div class="tag">FINAL PROJECT</div>
+        <div class="label">FINAL PROJECT</div>
+
         <h3>Mesin Penggiling Kedelai</h3>
 
         <p>
@@ -581,13 +700,16 @@ footer {
           <span>Motor Protection</span>
         </div>
       </div>
+
     </article>
 
     <article class="card project">
+
       <div class="project-head">ESP32</div>
 
       <div class="project-body">
-        <div class="tag">INTERNET OF THINGS</div>
+        <div class="label">INTERNET OF THINGS</div>
+
         <h3>Smart Room System</h3>
 
         <p>
@@ -603,13 +725,16 @@ footer {
           <span>L298N</span>
         </div>
       </div>
+
     </article>
 
     <article class="card project">
+
       <div class="project-head">YF-S201</div>
 
       <div class="project-body">
-        <div class="tag">AUTOMATION</div>
+        <div class="label">AUTOMATION</div>
+
         <h3>Automatic Bottle Filling</h3>
 
         <p>
@@ -623,13 +748,16 @@ footer {
           <span>Flow Sensor</span>
         </div>
       </div>
+
     </article>
 
     <article class="card project">
+
       <div class="project-head">BLYNK</div>
 
       <div class="project-body">
-        <div class="tag">CONNECTED DEVICE</div>
+        <div class="label">CONNECTED DEVICE</div>
+
         <h3>Wi-Fi Motor Charging System</h3>
 
         <p>
@@ -644,27 +772,32 @@ footer {
           <span>Wi-Fi</span>
         </div>
       </div>
+
     </article>
 
   </div>
 </section>
 
 <!-- EDUCATION -->
+
 <section id="education">
   <div class="label">05 / EDUCATION</div>
   <h2>Riwayat <span>Pendidikan.</span></h2>
 
   <div class="card education">
+
     <div>
       <strong>Politeknik Negeri Malang</strong>
       <p>D4 Teknik Elektronika · IPK 3,60</p>
     </div>
 
-    <div class="tag">2022 – 2026</div>
+    <div class="label">SARJANA TERAPAN</div>
+
   </div>
 </section>
 
 <!-- CERTIFICATES -->
+
 <section id="certificates">
   <div class="label">06 / CERTIFICATIONS</div>
   <h2>Sertifikasi & <span>Pelatihan.</span></h2>
@@ -681,26 +814,35 @@ footer {
 </section>
 
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
+
   <div class="label">07 / GET IN TOUCH</div>
 
-  <h2>Mari membangun sesuatu yang
+  <h2>
+    Mari membangun sesuatu yang
     <span>bermanfaat.</span>
   </h2>
 
   <p>
     Saya terbuka untuk kesempatan kerja, kolaborasi,
-    dan diskusi seputar bidang elektronika maupun engineering.
+    dan diskusi seputar bidang elektronika, sistem kendali,
+    instrumentasi, serta otomasi industri.
   </p>
 
   <div class="buttons" style="justify-content:center">
+
+    <!-- GANTI EMAIL DENGAN EMAIL ASLI -->
     <a class="btn primary"
        href="mailto:EMAIL_KAMU@example.com">
-       Kirim Email ↗
+      Kirim Email ↗
     </a>
+
   </div>
 
   <div class="social">
+
+    <!-- GANTI LINK DENGAN PROFIL ASLI -->
     <a href="https://www.linkedin.com/"
        target="_blank">LINKEDIN ↗</a>
 
@@ -709,8 +851,12 @@ footer {
 
     <a href="https://wa.me/"
        target="_blank">WHATSAPP ↗</a>
+
   </div>
+
 </section>
+
+<!-- FOOTER -->
 
 <footer>
   © 2026 ADHIE WIJAYA · ELECTRICAL ENGINEER PORTFOLIO
